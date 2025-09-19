@@ -1,7 +1,18 @@
 body {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Helvetica, sans-serif;
 	color: red;
 	padding: 3rem;
+}
+
+h1 {
+	font-family: 'Times New Roman', serif;
+	color: black;
+	font-size: 4rem;
+}
+
+.big-orange {
+	color: orange;
+	font-size: 2rem;
 }
 
 *:not(:first-child) { margin-block-start: 1em; }
