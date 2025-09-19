@@ -1,4 +1,7 @@
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	color: red;
+	padding: 3rem;
 }
+
+*:not(:first-child) { margin-block-start: 1em; }
