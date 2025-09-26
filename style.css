@@ -17,19 +17,20 @@
 }
 
 /* Our base styles. */
-body {
+/* This could also be `html { … }` */
+:root {
 	/* Our base color/font properties will inherit to everything. */
 	font-family: 'National Park', sans-serif;
-	font-size: 1.5rem;
+	font-size: 150%;
 	padding: 3rem;
 	font-weight: 200; /* This font has 100–900 weights; some only have normal/bold. */
 }
 
 /* Some default spacing between things! */
-*:where(:not(:first-child)) { margin-block-start: 1em; }
+*:where(:not(:first-child)) { margin-block-start: 1rem; }
 
 /* Bigger headings. */
-h1 { font-size: 7rem; }
+h1 { font-size: 5rem; }
 h2 { font-size: 3rem; }
 
 /* All my headings… */
@@ -57,7 +58,7 @@ header {
 h1 + p, nav { margin-block-start: 3rem }
 
 /* Space above these. */
-article, section { margin-block-start: 7rem }
+article, section { margin-block-start: 5rem }
 
 /* The reset clears this default, so we add it back. */
 em { font-style: italic; }
@@ -70,7 +71,7 @@ section a {
 
 pre {
 	font-family: 'Courier', monospace; /* Typewriter vibes. */
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin-block: 2em; /* More space above/below, `em` relative to size. */
 	opacity: 40%; /* Fade these back. */
 }
@@ -114,7 +115,7 @@ nav li {
 /* We’ll have these inset and a bit bigger. */
 blockquote {
 	font-family: 'EB Garamond', serif;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-style: italic;
 	margin-block: 3em;
 	margin-inline-start: 6em; /* Left. */
@@ -138,7 +139,9 @@ footer {
 
 	/* “Nested” links in the footer. */
 	a {
+		display: inline-block;
 		font-weight: 500;
+		margin-block-start: 2rem;
 		text-decoration: none;
 		text-transform: uppercase;
 
@@ -150,5 +153,5 @@ footer {
 /* Use classes for things you want to treat alike, across your elements. */
 .inset {
 	background-color: #eee;
-	padding: 3rem;
+	padding: 2rem;
 }
